@@ -1,1 +1,93 @@
-const _0x5bfe8a=_0x3547;(function(_0x4b720d,_0x542661){const _0x173fb1=_0x3547,_0x570a58=_0x4b720d();while(!![]){try{const _0x50eab3=-parseInt(_0x173fb1(0x9c))/0x1*(parseInt(_0x173fb1(0x91))/0x2)+parseInt(_0x173fb1(0x9b))/0x3+-parseInt(_0x173fb1(0xc1))/0x4+parseInt(_0x173fb1(0x8f))/0x5+parseInt(_0x173fb1(0xaa))/0x6+-parseInt(_0x173fb1(0xba))/0x7+parseInt(_0x173fb1(0xab))/0x8*(parseInt(_0x173fb1(0x92))/0x9);if(_0x50eab3===_0x542661)break;else _0x570a58['push'](_0x570a58['shift']());}catch(_0x2d814a){_0x570a58['push'](_0x570a58['shift']());}}}(_0x3368,0x98f18));const {Client,Intents}=require('discord.js-selfbot-v13'),fs=require('fs'),readline=require(_0x5bfe8a(0x9d)),os=require('os');function clearConsole(){const _0x1d350e=_0x5bfe8a;os['platform']()==='win32'?console[_0x1d350e(0xa9)]('\x1b[2J\x1b[0;0H'):console[_0x1d350e(0xa9)](_0x1d350e(0xaf));}function _0x3547(_0x2557f0,_0x1ab9ec){const _0x336818=_0x3368();return _0x3547=function(_0x3547fa,_0x442905){_0x3547fa=_0x3547fa-0x8e;let _0x41bc7a=_0x336818[_0x3547fa];return _0x41bc7a;},_0x3547(_0x2557f0,_0x1ab9ec);}function printBanner(){const _0x2b3e36=_0x5bfe8a;console[_0x2b3e36(0xa9)](_0x2b3e36(0xa4)),console['log'](_0x2b3e36(0xbc)),console[_0x2b3e36(0xa9)](_0x2b3e36(0xac));}function printInColor(_0x8fef01,_0x1af458,_0x2ea9d0,_0x4d02f6){const _0xd09763=_0x5bfe8a;console[_0xd09763(0xa9)](_0xd09763(0xb9)+_0x1af458+';'+_0x2ea9d0+';'+_0x4d02f6+'m'+_0x8fef01+_0xd09763(0xac));}const rl=readline[_0x5bfe8a(0x99)]({'input':process['stdin'],'output':process[_0x5bfe8a(0x94)]});function askQuestion(_0x4c6554){return new Promise(_0x5e453f=>rl['question'](_0x4c6554,_0x5e453f));}async function main(){const _0x52f888=_0x5bfe8a;printBanner(),await askQuestion('\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Devam\x20etmek\x20için\x20Enter\x27a\x20basın...'),clearConsole();const _0x35e283=await askQuestion('[CLAY]\x20Lütfen\x20Discord\x20token\x27ınızı\x20girin:\x20',0x0,0xff,0x0),_0xe62809=await askQuestion('[CLAY]\x20Lütfen\x20sunucu\x20ID\x27sini\x20girin:\x20',0x0,0xff,0x0);clearConsole(),printInColor(_0x52f888(0xb1),0xff,0xa5,0x0);const _0x1d6bd8=new Client({'intents':[Intents[_0x52f888(0xc3)]['GUILDS'],Intents[_0x52f888(0xc3)][_0x52f888(0xb6)],Intents[_0x52f888(0xc3)][_0x52f888(0xb5)]]});_0x1d6bd8['once'](_0x52f888(0xb7),async()=>{const _0x597b1e=_0x52f888;printInColor(_0x597b1e(0xae)+_0x1d6bd8['user'][_0x597b1e(0xb8)]+'!',0x0,0xff,0x0),_0x1d6bd8['user'][_0x597b1e(0x9e)](_0x597b1e(0x9a)),clearConsole();const _0x24c2b1=_0x1d6bd8[_0x597b1e(0x9f)]['cache'][_0x597b1e(0x98)](_0xe62809);if(!_0x24c2b1){printInColor(_0x597b1e(0x90),0xff,0x0,0x0),rl[_0x597b1e(0x93)]();return;}try{const _0x4e3f1f=await _0x24c2b1['members'][_0x597b1e(0xa0)](),_0x433df4=_0x4e3f1f[_0x597b1e(0xbe)](_0x1b8ac6=>{const _0x2d9aca=_0x597b1e,_0x59654f=_0x1b8ac6[_0x2d9aca(0xb3)][_0x2d9aca(0xc2)][_0x2d9aca(0xa5)]();return _0x59654f[_0x2d9aca(0xb0)](_0x2d9aca(0xa8));})[_0x597b1e(0xad)](_0x864b3c=>({'gorunenad':_0x864b3c[_0x597b1e(0xb3)][_0x597b1e(0xa6)],'kullaniciadi':_0x864b3c[_0x597b1e(0xb3)][_0x597b1e(0xb8)],'id':_0x864b3c[_0x597b1e(0xb3)]['id'],'kurulum':_0x864b3c[_0x597b1e(0xb3)][_0x597b1e(0x96)]}));_0x433df4[_0x597b1e(0xbb)]===0x0?(printInColor(_0x597b1e(0xa7),0xff,0x0,0x0),process[_0x597b1e(0xc0)](0x0)):fs[_0x597b1e(0xa1)](_0x597b1e(0x8e),JSON[_0x597b1e(0xa3)](_0x433df4,null,0x2),_0x2c8452=>{const _0x133dfe=_0x597b1e;_0x2c8452?(printInColor(_0x133dfe(0xb4),0xff,0x0,0x0),console[_0x133dfe(0xb2)](_0x2c8452)):printInColor(_0x133dfe(0xa2),0x0,0xff,0x0),rl[_0x133dfe(0x93)](),process['exit'](0x0);});}catch(_0x134b85){printInColor(_0x597b1e(0x97),0xff,0x0,0x0),console[_0x597b1e(0xb2)](_0x134b85),rl[_0x597b1e(0x93)](),process[_0x597b1e(0xc0)](0x1);}}),_0x1d6bd8[_0x52f888(0xbf)](_0x35e283)[_0x52f888(0x95)](_0x46fccf=>{const _0x5a59e6=_0x52f888;printInColor(_0x5a59e6(0xbd),0xff,0x0,0x0),console[_0x5a59e6(0xb2)](_0x46fccf);});}main();function _0x3368(){const _0x45ae52=['fetch','writeFile','[CLAY]\x20Early\x20rozeti\x20olanların\x20kullanıcı\x20adı\x20JSON\x20dosyasına\x20yazdırıldı!','stringify','\x1b[31m','toArray','displayName','[CLAY]\x20Bu\x20sunucuda\x20`Early\x20Supporter`\x20rozeti\x20olan\x20kimse\x20yok!','EARLY_SUPPORTER','log','1442640hsQDUg','14045616UweYzW','\x1b[0m','map','[CLAY]\x20Giriş\x20yapıldı:\x20','\x1b[2J\x1b[0;0H','includes','[CLAY]\x20Early\x20rozeti\x20olanlar\x20kontrol\x20ediliyor...','error','user','[CLAY]\x20JSON\x20dosyası\x20yazılırken\x20bir\x20hata\x20oluştu:','GUILD_MESSAGES','GUILD_MEMBERS','ready','tag','\x1b[38;2;','1043791NWoiSO','length','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20...\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20s,\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.s\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20ss,\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.\x20..\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.ss\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x27SsSs,\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20..\x20\x20.\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.sSsS\x27\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20sSs\x27sSs,\x20\x20\x20\x20\x20\x20\x20\x20.\x20\x20\x20.\x20\x20\x20\x20\x20\x20\x20\x20.sSs\x27sSs\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20sSs\x20\x20\x27sSs,\x20\x20\x20\x20\x20\x20...\x20\x20\x20\x20\x20\x20.sSs\x27\x20\x20sSs\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20sS,\x20\x20\x20\x20\x27sSs,\x20\x20\x20\x20\x20\x20\x20\x20\x20.sSs\x27\x20\x20\x20\x20.Ss\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x27Ss\x20\x20\x20\x20\x20\x20\x20\x27sSs,\x20\x20\x20.sSs\x27\x20\x20\x20\x20\x20\x20\x20sS\x27\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20...\x20\x20\x20\x20\x20\x20\x20sSs\x20\x20CLAY\x20\x20\x20\x27\x20.sSs\x27\x20\x20\x20CLAY\x20\x20sSs\x20\x20\x20\x20\x20\x20\x20...\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20sSs\x20\x20\x20\x20\x20\x20\x20.sSs\x27\x20..,\x20\x20\x20\x20\x20\x20\x20sSs\x20\x20\x20\x20\x20\x20\x20.\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.\x20..\x20\x20\x20\x20\x20\x20\x20\x20\x20sS,\x20\x20\x20.sSs\x27\x20\x20.\x20\x20\x27sSs,\x20\x20\x20.Ss\x20\x20\x20\x20\x20\x20\x20\x20.\x20..\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20..\x20\x20.\x20\x20\x20\x20\x20\x20\x20\x20\x27Ss\x20.Ss\x27\x20\x20\x20\x20\x20.\x20\x20\x20\x20\x20\x27sSs.\x20\x27\x27\x20\x20\x20\x20\x20\x20\x20\x20..\x20\x20.\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.\x20\x20\x20.\x20\x20\x20\x20\x20\x20\x20\x20\x20sSs\x20\x27\x20\x20\x20\x20\x20\x20\x20.\x20\x20\x20\x20\x20\x20\x20\x20\x27sSs,\x20\x20\x20\x20\x20\x20\x20\x20.\x20\x20\x20.\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20...\x20\x20\x20\x20\x20\x20.sS.\x27sSs\x20\x20\x20\x20\x20\x20\x20\x20.\x20\x20\x20\x20\x20\x20\x20\x20..\x20\x27sSs,\x20\x20\x20\x20\x20\x20...\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.sSs\x27\x20\x20\x20\x20sS,\x20\x20\x20\x20\x20.....\x20\x20\x20\x20\x20.Ss\x20\x20\x20\x20\x27sSs,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.sSs\x27\x20\x20\x20\x20\x20\x20\x20\x27Ss\x20\x20\x20\x20\x20\x20\x20.\x20\x20\x20\x20\x20\x20\x20sS\x27\x20\x20\x20\x20\x20\x20\x20\x27sSs,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.sSs\x27\x20\x20\x20CLAY\x20\x20\x20\x20sSs\x20\x20\x20\x20\x20\x20.\x20\x20\x20\x20\x20\x20sSs\x20\x20\x20CLAY\x20\x20\x20\x20\x27sSs,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20.sSs\x27____________________________\x20sSs\x20______________\x27sSs,\x0a\x20\x20\x20\x20\x20\x20.sSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS\x27.Ss\x20SSSSSSSSSSSSSSSSSSSSSs,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20...\x20\x20\x20\x20\x20\x20\x20\x20\x20sS\x27\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20sSs\x20\x20\x20C\x20\x20\x20sSs\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20sSs\x20\x20L\x20\x20sSs\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20sS,\x20A\x20.Ss\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x27Ss\x20Y\x20sS\x27\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20sSs\x20sSs\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20sSsSs\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20sSs\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20s\x0a\x20\x20','[CLAY]\x20Giriş\x20hatası:','filter','login','exit','4933292hjgDIy','flags','FLAGS','early.json','2024795PSUJnB','[CLAY]\x20Geçersiz\x20sunucu\x20ID\x27si!','8iJfeca','9MKDkFn','close','stdout','catch','createdAt','[CLAY]\x20Sunucu\x20verileri\x20alınırken\x20bir\x20hata\x20oluştu:','get','createInterface','Clay\x20Early\x20Finder!','1839237yRaOVf','251322QfTmiT','readline','setActivity','guilds'];_0x3368=function(){return _0x45ae52;};return _0x3368();}
+const { Client, Intents } = require('discord.js-selfbot-v13');
+const fs = require('fs');
+const readline = require('readline');
+const os = require('os');
+
+function clearConsole() {
+  if (os.platform() === 'win32') {
+    console.log('\x1b[2J\x1b[0;0H');
+  } else {
+    console.log('\x1b[2J\x1b[0;0H');
+  }
+}
+
+
+function printInColor(text, r, g, b) {
+  console.log(`\x1b[38;2;${r};${g};${b}m${text}\x1b[0m`);
+}
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+function askQuestion(query) {
+  return new Promise(resolve => rl.question(query, resolve));
+}
+
+async function main() {
+  await askQuestion('                      Devam etmek için Enter\'a basın...');
+  clearConsole();
+
+  const token = await askQuestion('[CLAY] Lütfen Discord token\'ınızı girin: ', 0, 255, 0);
+  const guildId = await askQuestion('[CLAY] Lütfen sunucu ID\'sini girin: ',  0, 255, 0);
+
+  clearConsole();
+
+  printInColor('[CLAY] Early rozeti olanlar kontrol ediliyor...', 255, 165, 0); 
+
+  const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MEMBERS, Intents.FLAGS.GUILD_MESSAGES] });
+
+  client.once('ready', async () => {
+    printInColor(`[CLAY] Giriş yapıldı: ${client.user.tag}!`, 0, 255, 0);
+    client.user.setActivity('Clay Early Finder!');
+    clearConsole();
+
+    const guild = client.guilds.cache.get(guildId);
+    if (!guild) {
+      printInColor('[CLAY] Geçersiz sunucu ID\'si!', 255, 0, 0);
+      rl.close();
+      return;
+    }
+
+    try {
+      const members = await guild.members.fetch();
+      const earlySupporters = members.filter(member => {
+        const flags = member.user.flags.toArray();
+        return flags.includes("EARLY_SUPPORTER");
+      }).map(member => ({
+        gorunenad: member.user.displayName,
+        kullaniciadi: member.user.tag,
+        id: member.user.id,
+        kurulum: member.user.createdAt
+      }));
+
+      if (earlySupporters.length === 0) {
+        printInColor('[CLAY] Bu sunucuda `Early Supporter` rozeti olan kimse yok!', 255, 0, 0);
+        process.exit(0);
+      } else {
+        fs.writeFile('early.json', JSON.stringify(earlySupporters, null, 2), (err) => {
+          if (err) {
+            printInColor('[CLAY] JSON dosyası yazılırken bir hata oluştu:', 255, 0, 0);
+            console.error(err);
+          } else {
+            printInColor('[CLAY] Early rozeti olanların kullanıcı adı JSON dosyasına yazdırıldı!', 0, 255, 0);
+          }
+          rl.close();
+          process.exit(0);
+        });
+      }
+    } catch (error) {
+      printInColor('[CLAY] Sunucu verileri alınırken bir hata oluştu:', 255, 0, 0);
+      console.error(error);
+      rl.close();
+      process.exit(1);
+    }
+  });
+
+  client.login(token)
+    .catch(err => { printInColor("[CLAY] Giriş hatası:", 255, 0, 0);
+      console.error(err); });
+}
+
+main();
