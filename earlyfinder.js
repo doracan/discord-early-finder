@@ -3,7 +3,7 @@ const fs = require('fs');
 const readline = require('readline');
 const os = require('os');
 
-function clearConsole() {
+function consoletemizle() {
   if (os.platform() === 'win32') {
     console.log('\x1b[2J\x1b[0;0H');
   } else {
@@ -27,12 +27,12 @@ function askQuestion(query) {
 
 async function main() {
   await askQuestion('                      Devam etmek için Enter\'a basın...');
-  clearConsole();
+  consoletemizle();
 
   const token = await askQuestion('[CLAY] Lütfen Discord token\'ınızı girin: ', 0, 255, 0);
-  const guildId = await askQuestion('[CLAY] Lütfen sunucu ID\'sini girin: ',  0, 255, 0);
+  const sunucuid = await askQuestion('[CLAY] Lütfen sunucu ID\'sini girin: ',  0, 255, 0);
 
-  clearConsole();
+  consoletemizle();
 
   printInColor('[CLAY] Early rozeti olanlar kontrol ediliyor...', 255, 165, 0); 
 
@@ -41,9 +41,9 @@ async function main() {
   client.once('ready', async () => {
     printInColor(`[CLAY] Giriş yapıldı: ${client.user.tag}!`, 0, 255, 0);
     client.user.setActivity('Clay Early Finder!');
-    clearConsole();
+    consoletemizle();
 
-    const guild = client.guilds.cache.get(guildId);
+    const guild = client.guilds.cache.get(sunucuid);
     if (!guild) {
       printInColor('[CLAY] Geçersiz sunucu ID\'si!', 255, 0, 0);
       rl.close();
@@ -52,7 +52,7 @@ async function main() {
 
     try {
       const members = await guild.members.fetch();
-      const earlySupporters = members.filter(member => {
+      const earlysup = members.filter(member => {
         const flags = member.user.flags.toArray();
         return flags.includes("EARLY_SUPPORTER");
       }).map(member => ({
@@ -62,11 +62,11 @@ async function main() {
         kurulum: member.user.createdAt
       }));
 
-      if (earlySupporters.length === 0) {
+      if (earlysup.length === 0) {
         printInColor('[CLAY] Bu sunucuda `Early Supporter` rozeti olan kimse yok!', 255, 0, 0);
         process.exit(0);
       } else {
-        fs.writeFile('early.json', JSON.stringify(earlySupporters, null, 2), (err) => {
+        fs.writeFile('early.json', JSON.stringify(earlysup, null, 2), (err) => {
           if (err) {
             printInColor('[CLAY] JSON dosyası yazılırken bir hata oluştu:', 255, 0, 0);
             console.error(err);
